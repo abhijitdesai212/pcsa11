@@ -5,6 +5,7 @@ class test1
         WebDriver driver= new ChromeDriver();
         driver.get("www.google.com");
         driver.findelement(By.id("username").click();
+        driver.findelement(By.id("pwd").sendkeys();
         driver.quit();
         }
    }
