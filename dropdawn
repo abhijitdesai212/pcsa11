@@ -1,0 +1,21 @@
+public class Test1 {
+//script to verify wheather dropdawn is multiple or not
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.facebook.com/signup/");
+		WebElement allday = driver.findElement(By.id("day"));
+		Select s=new Select(allday);
+	    if(s.isMultiple())
+	    {
+	    	System.out.println("TRUE-its multiple");
+	    }
+	    else
+	    {
+	    	System.out.println("FALSE-its not multiple");
+	    }
+	}
+}
